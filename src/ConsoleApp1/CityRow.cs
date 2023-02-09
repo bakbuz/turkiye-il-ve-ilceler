@@ -4,11 +4,6 @@ namespace ConsoleApp1
 {
     class CityRow
     {
-        public CityRow()
-        {
-
-        }
-
         public CityRow(int startRow, string name, int districtCount)
         {
             StartRow = startRow;
