@@ -1,6 +1,6 @@
 USE [Turkiye]
 GO
-/****** Object:  Table [dbo].[Cities]    Script Date: 09/02/2023 17:08:31 ******/
+/****** Object:  Table [dbo].[Cities]    Script Date: 09/02/2023 17:31:59 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -16,7 +16,7 @@ CREATE TABLE [dbo].[Cities](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Districts]    Script Date: 09/02/2023 17:08:31 ******/
+/****** Object:  Table [dbo].[Districts]    Script Date: 09/02/2023 17:31:59 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
