@@ -6,7 +6,8 @@
         {
             //Exporter.ExportToExcel();
 
-            DbInsert.ForSqlServer();
+            //DbInsert.ForSqlServer();
+            DbInsert.ForPostgres();
         }
     }
 }

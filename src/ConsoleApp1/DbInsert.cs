@@ -9,15 +9,10 @@ namespace ConsoleApp1
         internal static string Postgres = "Host=localhost;Port=5432;Database=Turkiye;User ID=postgres;Password=123qwe..;";
     }
 
-    internal class DbInsert
+    internal static class DbInsert
     {
-        internal static void ForSqlServer()
+        private static void SaveToDatabase(DbContextOptionsBuilder<DataContext> optionsBuilder, List<CityRow> cities)
         {
-            var cities = Utils.ReadFromJson();
-
-            var optionsBuilder = new DbContextOptionsBuilder<DataContext>();
-            optionsBuilder.UseSqlServer(ConnectionStrings.SqlServer);
-
             using (var ctx = new DataContext(optionsBuilder.Options))
             {
                 ctx.Database.EnsureCreated();
@@ -30,11 +25,10 @@ namespace ConsoleApp1
                     ctx.Cities.Add(city);
                     ctx.SaveChanges();
 
-                    var cityId = city.Id;
                     foreach (var districtName in c.Districts)
                     {
                         var district = new District();
-                        district.CityId = cityId;
+                        district.CityId = city.Id;
                         district.Name = districtName;
 
                         ctx.Districts.Add(district);
@@ -44,6 +38,30 @@ namespace ConsoleApp1
                     Console.WriteLine(c.Name + " kaydedildi");
                 }
             }
+        }
+
+        internal static void ForSqlServer()
+        {
+            var cities = Utils.ReadFromJson();
+            if (cities == null)
+                throw new NullReferenceException(nameof(cities));
+
+            var optionsBuilder = new DbContextOptionsBuilder<DataContext>();
+            optionsBuilder.UseSqlServer(ConnectionStrings.SqlServer);
+
+            SaveToDatabase(optionsBuilder, cities);
+        }
+
+        internal static void ForPostgres()
+        {
+            var cities = Utils.ReadFromJson();
+            if (cities == null)
+                throw new NullReferenceException(nameof(cities));
+
+            var optionsBuilder = new DbContextOptionsBuilder<DataContext>();
+            optionsBuilder.UseNpgsql(ConnectionStrings.Postgres);
+
+            SaveToDatabase(optionsBuilder, cities);
         }
     }
 }

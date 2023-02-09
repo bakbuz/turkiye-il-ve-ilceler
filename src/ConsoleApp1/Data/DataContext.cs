@@ -42,6 +42,6 @@ namespace ConsoleApp1.Data
         public int CityId { get; set; }
         public string Name { get; set; } = string.Empty;
 
-        public City City { get; set; } = new City();
+        public virtual City City { get; set; }
     }
 }
