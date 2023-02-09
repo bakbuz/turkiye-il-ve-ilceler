@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Exporter.ExportToExcel();
+            //Exporter.ExportToExcel();
 
-            //DbInsert.ForSqlServer();
+            DbInsert.ForSqlServer();
             //DbInsert.ForPostgres();
         }
     }

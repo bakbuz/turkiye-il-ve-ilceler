@@ -1,5 +1,6 @@
 ﻿using ConsoleApp1.Data;
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
 
 namespace ConsoleApp1
 {
@@ -11,21 +12,29 @@ namespace ConsoleApp1
 
     internal static class DbInsert
     {
-        private static void SaveToDatabase(DbContextOptionsBuilder<DataContext> optionsBuilder, List<CityRow> cities)
+        private static void SaveToDatabase(DbContextOptionsBuilder<DataContext> optionsBuilder, List<ProvinceWithAbbr> orderedProvinces, List<CityRow> cities)
         {
+            var tr = new CultureInfo("tr-TR");
+
             using (var ctx = new DataContext(optionsBuilder.Options))
             {
                 ctx.Database.EnsureCreated();
 
-                foreach (var c in cities)
+                foreach (var orderedProvince in orderedProvinces)
                 {
+                    var cityRow = cities.Single(c => c.Name == orderedProvince.Name.ToUpper(tr));
+                    if (cityRow == null)
+                        throw new NullReferenceException(nameof(cityRow));
+
                     var city = new City();
-                    city.Name = c.Name;
+                    city.Name = cityRow.Name;
+                    city.Abbreviation = orderedProvince.Abbreviation;
+                    city.DisplayOrder = orderedProvince.DisplayOrder;
 
                     ctx.Cities.Add(city);
                     ctx.SaveChanges();
 
-                    foreach (var districtName in c.Districts)
+                    foreach (var districtName in cityRow.Districts)
                     {
                         var district = new District();
                         district.CityId = city.Id;
@@ -35,13 +44,17 @@ namespace ConsoleApp1
                         ctx.SaveChanges();
                     }
 
-                    Console.WriteLine(c.Name + " kaydedildi");
+                    Console.WriteLine(cityRow.Name + " kaydedildi");
                 }
             }
         }
 
         internal static void ForSqlServer()
         {
+            var orderedProvinces = Utils.ReadFromOrderedJson();
+            if (orderedProvinces == null)
+                throw new NullReferenceException(nameof(orderedProvinces));
+
             var cities = Utils.ReadFromJson();
             if (cities == null)
                 throw new NullReferenceException(nameof(cities));
@@ -49,11 +62,15 @@ namespace ConsoleApp1
             var optionsBuilder = new DbContextOptionsBuilder<DataContext>();
             optionsBuilder.UseSqlServer(ConnectionStrings.SqlServer);
 
-            SaveToDatabase(optionsBuilder, cities);
+            SaveToDatabase(optionsBuilder, orderedProvinces, cities);
         }
 
         internal static void ForPostgres()
         {
+            var orderedProvinces = Utils.ReadFromOrderedJson();
+            if (orderedProvinces == null)
+                throw new NullReferenceException(nameof(orderedProvinces));
+
             var cities = Utils.ReadFromJson();
             if (cities == null)
                 throw new NullReferenceException(nameof(cities));
@@ -61,7 +78,7 @@ namespace ConsoleApp1
             var optionsBuilder = new DbContextOptionsBuilder<DataContext>();
             optionsBuilder.UseNpgsql(ConnectionStrings.Postgres);
 
-            SaveToDatabase(optionsBuilder, cities);
+            SaveToDatabase(optionsBuilder, orderedProvinces, cities);
         }
     }
 }

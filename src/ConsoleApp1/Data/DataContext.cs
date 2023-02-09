@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace ConsoleApp1.Data
 {
@@ -19,6 +20,7 @@ namespace ConsoleApp1.Data
                 b.ToTable("Cities");
                 b.HasKey(e => e.Id);
                 b.Property(e => e.Name).IsRequired().HasMaxLength(100).IsUnicode(true);
+                b.Property(e => e.Abbreviation).HasMaxLength(10).IsUnicode(false);
             });
 
             builder.Entity<District>(b =>
@@ -34,6 +36,8 @@ namespace ConsoleApp1.Data
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
+        public string Abbreviation { get; set; } = string.Empty;
+        public int DisplayOrder { get; set; }
     }
 
     public class District

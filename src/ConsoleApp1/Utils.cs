@@ -44,7 +44,7 @@ namespace ConsoleApp1
 
             var provinces = JsonConvert.DeserializeObject<List<ProvinceWithAbbr>>(jsonStr);
 
-            return provinces;
+            return provinces.OrderBy(o => o.DisplayOrder).ToList();
         }
     }
 }
