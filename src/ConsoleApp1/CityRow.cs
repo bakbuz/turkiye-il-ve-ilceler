@@ -1,4 +1,4 @@
-﻿using System.Text.Json.Serialization;
+﻿using Newtonsoft.Json;
 
 namespace ConsoleApp1
 {
@@ -17,13 +17,13 @@ namespace ConsoleApp1
         [JsonIgnore]
         public int EndRow { get; set; }
 
-        [JsonPropertyName("mame")]
+        [JsonProperty("mame")]
         public string Name { get; set; }
 
-        [JsonPropertyName("district_count")]
+        [JsonProperty("district_count")]
         public int DistrictCount { get; set; }
 
-        [JsonPropertyName("districts")]
+        [JsonProperty("districts")]
         public List<string> Districts { get; set; }
     }
 }
