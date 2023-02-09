@@ -1,5 +1,6 @@
-﻿using Newtonsoft.Json;
-using System.Text;
+﻿using System.Text;
+using System.Text.Encodings.Web;
+using System.Text.Json;
 
 namespace ConsoleApp1
 {
@@ -9,11 +10,15 @@ namespace ConsoleApp1
 
         private static readonly string JsonFilePath = Path.Combine(RootDirectory, "turkiye_il_ilce.json");
 
-        private static readonly string OrderedJsonFilePath = Path.Combine(RootDirectory, "turkiye_sadece_iller_sirali.json");
-
         public static void SaveAsJson(List<CityRow> cities)
         {
-            var jsonStr = JsonConvert.SerializeObject(cities, Formatting.Indented);
+            var options = new JsonSerializerOptions
+            {
+                Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+                WriteIndented = true
+            };
+
+            var jsonStr = JsonSerializer.Serialize(cities, options: options);
 
             using (var sw = new StreamWriter(JsonFilePath, false, Encoding.UTF8))
             {
@@ -29,22 +34,9 @@ namespace ConsoleApp1
                 jsonStr = sw.ReadToEnd();
             }
 
-            var cities = JsonConvert.DeserializeObject<List<CityRow>>(jsonStr);
+            var cities = JsonSerializer.Deserialize<List<CityRow>>(jsonStr);
 
             return cities;
-        }
-
-        public static List<ProvinceWithAbbr> ReadFromOrderedJson()
-        {
-            string jsonStr;
-            using (var sw = new StreamReader(OrderedJsonFilePath))
-            {
-                jsonStr = sw.ReadToEnd();
-            }
-
-            var provinces = JsonConvert.DeserializeObject<List<ProvinceWithAbbr>>(jsonStr);
-
-            return provinces;
         }
     }
 }

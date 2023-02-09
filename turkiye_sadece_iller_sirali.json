@@ -1,0 +1,407 @@
+[
+  {
+    "name": "Adana",
+    "abbreviation": "01",
+    "display_order": 1
+  },
+  {
+    "name": "Adıyaman",
+    "abbreviation": "02",
+    "display_order": 2
+  },
+  {
+    "name": "Afyonkarahisar",
+    "abbreviation": "03",
+    "display_order": 3
+  },
+  {
+    "name": "Ağrı",
+    "abbreviation": "04",
+    "display_order": 4
+  },
+  {
+    "name": "Amasya",
+    "abbreviation": "05",
+    "display_order": 5
+  },
+  {
+    "name": "Ankara",
+    "abbreviation": "06",
+    "display_order": 6
+  },
+  {
+    "name": "Antalya",
+    "abbreviation": "07",
+    "display_order": 7
+  },
+  {
+    "name": "Artvin",
+    "abbreviation": "08",
+    "display_order": 8
+  },
+  {
+    "name": "Aydın",
+    "abbreviation": "09",
+    "display_order": 9
+  },
+  {
+    "name": "Balıkesir",
+    "abbreviation": "10",
+    "display_order": 10
+  },
+  {
+    "name": "Bilecik",
+    "abbreviation": "11",
+    "display_order": 11
+  },
+  {
+    "name": "Bingöl",
+    "abbreviation": "12",
+    "display_order": 12
+  },
+  {
+    "name": "Bitlis",
+    "abbreviation": "13",
+    "display_order": 13
+  },
+  {
+    "name": "Bolu",
+    "abbreviation": "14",
+    "display_order": 14
+  },
+  {
+    "name": "Burdur",
+    "abbreviation": "15",
+    "display_order": 15
+  },
+  {
+    "name": "Bursa",
+    "abbreviation": "16",
+    "display_order": 16
+  },
+  {
+    "name": "Çanakkale",
+    "abbreviation": "17",
+    "display_order": 17
+  },
+  {
+    "name": "Çankırı",
+    "abbreviation": "18",
+    "display_order": 18
+  },
+  {
+    "name": "Çorum",
+    "abbreviation": "19",
+    "display_order": 19
+  },
+  {
+    "name": "Denizli",
+    "abbreviation": "20",
+    "display_order": 20
+  },
+  {
+    "name": "Diyarbakır",
+    "abbreviation": "21",
+    "display_order": 21
+  },
+  {
+    "name": "Edirne",
+    "abbreviation": "22",
+    "display_order": 22
+  },
+  {
+    "name": "Elazığ",
+    "abbreviation": "23",
+    "display_order": 23
+  },
+  {
+    "name": "Erzincan",
+    "abbreviation": "24",
+    "display_order": 24
+  },
+  {
+    "name": "Erzurum",
+    "abbreviation": "25",
+    "display_order": 25
+  },
+  {
+    "name": "Eskişehir",
+    "abbreviation": "26",
+    "display_order": 26
+  },
+  {
+    "name": "Gaziantep",
+    "abbreviation": "27",
+    "display_order": 27
+  },
+  {
+    "name": "Giresun",
+    "abbreviation": "28",
+    "display_order": 28
+  },
+  {
+    "name": "Gümüşhane",
+    "abbreviation": "29",
+    "display_order": 29
+  },
+  {
+    "name": "Hakkari",
+    "abbreviation": "30",
+    "display_order": 30
+  },
+  {
+    "name": "Hatay",
+    "abbreviation": "31",
+    "display_order": 31
+  },
+  {
+    "name": "Isparta",
+    "abbreviation": "32",
+    "display_order": 32
+  },
+  {
+    "name": "Mersin",
+    "abbreviation": "33",
+    "display_order": 33
+  },
+  {
+    "name": "İstanbul",
+    "abbreviation": "34",
+    "display_order": 34
+  },
+  {
+    "name": "İzmir",
+    "abbreviation": "35",
+    "display_order": 35
+  },
+  {
+    "name": "Kars",
+    "abbreviation": "36",
+    "display_order": 36
+  },
+  {
+    "name": "Kastamonu",
+    "abbreviation": "37",
+    "display_order": 37
+  },
+  {
+    "name": "Kayseri",
+    "abbreviation": "38",
+    "display_order": 38
+  },
+  {
+    "name": "Kırklareli",
+    "abbreviation": "39",
+    "display_order": 39
+  },
+  {
+    "name": "Kırşehir",
+    "abbreviation": "40",
+    "display_order": 40
+  },
+  {
+    "name": "Kocaeli",
+    "abbreviation": "41",
+    "display_order": 41
+  },
+  {
+    "name": "Konya",
+    "abbreviation": "42",
+    "display_order": 42
+  },
+  {
+    "name": "Kütahya",
+    "abbreviation": "43",
+    "display_order": 43
+  },
+  {
+    "name": "Malatya",
+    "abbreviation": "44",
+    "display_order": 44
+  },
+  {
+    "name": "Manisa",
+    "abbreviation": "45",
+    "display_order": 45
+  },
+  {
+    "name": "Kahramanmaraş",
+    "abbreviation": "46",
+    "display_order": 46
+  },
+  {
+    "name": "Mardin",
+    "abbreviation": "47",
+    "display_order": 47
+  },
+  {
+    "name": "Muğla",
+    "abbreviation": "48",
+    "display_order": 48
+  },
+  {
+    "name": "Muş",
+    "abbreviation": "49",
+    "display_order": 49
+  },
+  {
+    "name": "Nevşehir",
+    "abbreviation": "50",
+    "display_order": 50
+  },
+  {
+    "name": "Niğde",
+    "abbreviation": "51",
+    "display_order": 51
+  },
+  {
+    "name": "Ordu",
+    "abbreviation": "52",
+    "display_order": 52
+  },
+  {
+    "name": "Rize",
+    "abbreviation": "53",
+    "display_order": 53
+  },
+  {
+    "name": "Sakarya",
+    "abbreviation": "54",
+    "display_order": 54
+  },
+  {
+    "name": "Samsun",
+    "abbreviation": "55",
+    "display_order": 55
+  },
+  {
+    "name": "Siirt",
+    "abbreviation": "56",
+    "display_order": 56
+  },
+  {
+    "name": "Sinop",
+    "abbreviation": "57",
+    "display_order": 57
+  },
+  {
+    "name": "Sivas",
+    "abbreviation": "58",
+    "display_order": 58
+  },
+  {
+    "name": "Tekirdağ",
+    "abbreviation": "59",
+    "display_order": 59
+  },
+  {
+    "name": "Tokat",
+    "abbreviation": "60",
+    "display_order": 60
+  },
+  {
+    "name": "Trabzon",
+    "abbreviation": "61",
+    "display_order": 61
+  },
+  {
+    "name": "Tunceli",
+    "abbreviation": "62",
+    "display_order": 62
+  },
+  {
+    "name": "Şanlıurfa",
+    "abbreviation": "63",
+    "display_order": 63
+  },
+  {
+    "name": "Uşak",
+    "abbreviation": "64",
+    "display_order": 64
+  },
+  {
+    "name": "Van",
+    "abbreviation": "65",
+    "display_order": 65
+  },
+  {
+    "name": "Yozgat",
+    "abbreviation": "66",
+    "display_order": 66
+  },
+  {
+    "name": "Zonguldak",
+    "abbreviation": "67",
+    "display_order": 67
+  },
+  {
+    "name": "Aksaray",
+    "abbreviation": "68",
+    "display_order": 68
+  },
+  {
+    "name": "Bayburt",
+    "abbreviation": "69",
+    "display_order": 69
+  },
+  {
+    "name": "Karaman",
+    "abbreviation": "70",
+    "display_order": 70
+  },
+  {
+    "name": "Kırıkkale",
+    "abbreviation": "71",
+    "display_order": 71
+  },
+  {
+    "name": "Batman",
+    "abbreviation": "72",
+    "display_order": 72
+  },
+  {
+    "name": "Şırnak",
+    "abbreviation": "73",
+    "display_order": 73
+  },
+  {
+    "name": "Bartın",
+    "abbreviation": "74",
+    "display_order": 74
+  },
+  {
+    "name": "Ardahan",
+    "abbreviation": "75",
+    "display_order": 75
+  },
+  {
+    "name": "Iğdır",
+    "abbreviation": "76",
+    "display_order": 76
+  },
+  {
+    "name": "Yalova",
+    "abbreviation": "77",
+    "display_order": 77
+  },
+  {
+    "name": "Karabük",
+    "abbreviation": "78",
+    "display_order": 78
+  },
+  {
+    "name": "Kilis",
+    "abbreviation": "79",
+    "display_order": 79
+  },
+  {
+    "name": "Osmaniye",
+    "abbreviation": "80",
+    "display_order": 80
+  },
+  {
+    "name": "Düzce",
+    "abbreviation": "81",
+    "display_order": 81
+  }
+]
