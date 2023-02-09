@@ -1,6 +1,5 @@
 ﻿using ConsoleApp1.Data;
 using Microsoft.EntityFrameworkCore;
-using System.Globalization;
 
 namespace ConsoleApp1
 {
@@ -12,29 +11,23 @@ namespace ConsoleApp1
 
     internal static class DbInsert
     {
-        private static void SaveToDatabase(DbContextOptionsBuilder<DataContext> optionsBuilder, List<ProvinceWithAbbr> orderedProvinces, List<CityRow> cities)
+        private static void SaveToDatabase(DbContextOptionsBuilder<DataContext> optionsBuilder, List<CityDto> cityDtos)
         {
-            var tr = new CultureInfo("tr-TR");
-
             using (var ctx = new DataContext(optionsBuilder.Options))
             {
                 ctx.Database.EnsureCreated();
 
-                foreach (var orderedProvince in orderedProvinces)
+                foreach (var cityDto in cityDtos)
                 {
-                    var cityRow = cities.Single(c => c.Name == orderedProvince.Name.ToUpper(tr));
-                    if (cityRow == null)
-                        throw new NullReferenceException(nameof(cityRow));
-
                     var city = new City();
-                    city.Name = cityRow.Name;
-                    city.Abbreviation = orderedProvince.Abbreviation;
-                    city.DisplayOrder = orderedProvince.DisplayOrder;
+                    city.Name = cityDto.Name;
+                    city.Abbreviation = cityDto.Abbreviation;
+                    city.DisplayOrder = cityDto.DisplayOrder;
 
                     ctx.Cities.Add(city);
                     ctx.SaveChanges();
 
-                    foreach (var districtName in cityRow.Districts)
+                    foreach (var districtName in cityDto.Districts)
                     {
                         var district = new District();
                         district.CityId = city.Id;
@@ -44,41 +37,33 @@ namespace ConsoleApp1
                         ctx.SaveChanges();
                     }
 
-                    Console.WriteLine(cityRow.Name + " kaydedildi");
+                    Console.WriteLine(cityDto.Name + " kaydedildi");
                 }
             }
         }
 
         internal static void ForSqlServer()
         {
-            var orderedProvinces = Utils.ReadFromOrderedJson();
-            if (orderedProvinces == null)
-                throw new NullReferenceException(nameof(orderedProvinces));
-
-            var cities = Utils.ReadFromJson();
-            if (cities == null)
-                throw new NullReferenceException(nameof(cities));
+            var cityDtos = Utils.ReadFromJson();
+            if (cityDtos == null)
+                throw new NullReferenceException(nameof(cityDtos));
 
             var optionsBuilder = new DbContextOptionsBuilder<DataContext>();
             optionsBuilder.UseSqlServer(ConnectionStrings.SqlServer);
 
-            SaveToDatabase(optionsBuilder, orderedProvinces, cities);
+            SaveToDatabase(optionsBuilder, cityDtos);
         }
 
         internal static void ForPostgres()
         {
-            var orderedProvinces = Utils.ReadFromOrderedJson();
-            if (orderedProvinces == null)
-                throw new NullReferenceException(nameof(orderedProvinces));
-
-            var cities = Utils.ReadFromJson();
-            if (cities == null)
-                throw new NullReferenceException(nameof(cities));
+            var cityDtos = Utils.ReadFromJson();
+            if (cityDtos == null)
+                throw new NullReferenceException(nameof(cityDtos));
 
             var optionsBuilder = new DbContextOptionsBuilder<DataContext>();
             optionsBuilder.UseNpgsql(ConnectionStrings.Postgres);
 
-            SaveToDatabase(optionsBuilder, orderedProvinces, cities);
+            SaveToDatabase(optionsBuilder, cityDtos);
         }
     }
 }

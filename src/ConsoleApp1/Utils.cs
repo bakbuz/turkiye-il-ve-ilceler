@@ -9,11 +9,11 @@ namespace ConsoleApp1
 
         private static readonly string JsonFilePath = Path.Combine(RootDirectory, "turkiye_il_ilce.json");
 
-        private static readonly string OrderedJsonFilePath = Path.Combine(RootDirectory, "turkiye_sadece_iller_sirali.json");
+        private static readonly string OrderedJsonFilePath = Path.Combine(RootDirectory, "turkiye_il.json");
 
-        public static void SaveAsJson(List<CityRow> cities)
+        public static void SaveAsJson(List<CityDto> cityDtos)
         {
-            var jsonStr = JsonConvert.SerializeObject(cities, Formatting.Indented);
+            var jsonStr = JsonConvert.SerializeObject(cityDtos, Formatting.Indented);
 
             using (var sw = new StreamWriter(JsonFilePath, false, Encoding.UTF8))
             {
@@ -21,7 +21,7 @@ namespace ConsoleApp1
             }
         }
 
-        public static List<CityRow> ReadFromJson()
+        public static List<CityDto> ReadFromJson()
         {
             string jsonStr;
             using (var sw = new StreamReader(JsonFilePath))
@@ -29,9 +29,9 @@ namespace ConsoleApp1
                 jsonStr = sw.ReadToEnd();
             }
 
-            var cities = JsonConvert.DeserializeObject<List<CityRow>>(jsonStr);
+            var cityDtos = JsonConvert.DeserializeObject<List<CityDto>>(jsonStr);
 
-            return cities;
+            return cityDtos;
         }
 
         public static List<ProvinceWithAbbr> ReadFromOrderedJson()

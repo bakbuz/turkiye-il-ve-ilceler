@@ -1,4 +1,5 @@
 ﻿using OfficeOpenXml;
+using System.Globalization;
 
 namespace ConsoleApp1
 {
@@ -24,10 +25,33 @@ namespace ConsoleApp1
             }
 
             // illeri alfabetik olarak sırala
-            cities = cities.OrderBy(o => o.Name).ToList();
+            //cities = cities.OrderBy(o => o.Name).ToList();
             var districtCount = cities.Sum(c => c.Districts.Count);
 
-            Utils.SaveAsJson(cities);
+            // illeri plaka koduna göre sırala
+            var orderedProvinces = Utils.ReadFromOrderedJson();
+            if (orderedProvinces == null)
+                throw new NullReferenceException(nameof(orderedProvinces));
+
+            var cityDtos = new List<CityDto>();
+            var cultureTR = new CultureInfo("tr-TR");
+            foreach (var orderedProvince in orderedProvinces)
+            {
+                var cityRow = cities.Single(c => c.Name == orderedProvince.Name.ToUpper(cultureTR));
+                if (cityRow == null)
+                    throw new NullReferenceException(nameof(cityRow));
+
+                cityDtos.Add(new CityDto
+                {
+                    Name = cityRow.Name,
+                    Abbreviation = orderedProvince.Abbreviation,
+                    DisplayOrder = orderedProvince.DisplayOrder,
+                    DistrictCount = cityRow.DistrictCount,
+                    Districts = cityRow.Districts,
+                });
+            }
+
+            Utils.SaveAsJson(cityDtos);
 
             // info
             Console.WriteLine("Aktarılan il sayısı: " + cities.Count);

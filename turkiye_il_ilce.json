@@ -1,6 +1,8 @@
 ﻿[
   {
     "mame": "ADANA",
+    "abbreviation": "01",
+    "display_order": 1,
     "district_count": 15,
     "districts": [
       "ALADAĞ",
@@ -22,6 +24,8 @@
   },
   {
     "mame": "ADIYAMAN",
+    "abbreviation": "02",
+    "display_order": 2,
     "district_count": 8,
     "districts": [
       "BESNİ",
@@ -36,6 +40,8 @@
   },
   {
     "mame": "AFYONKARAHİSAR",
+    "abbreviation": "03",
+    "display_order": 3,
     "district_count": 17,
     "districts": [
       "BAŞMAKÇI",
@@ -59,6 +65,8 @@
   },
   {
     "mame": "AĞRI",
+    "abbreviation": "04",
+    "display_order": 4,
     "district_count": 7,
     "districts": [
       "DİYADİN",
@@ -71,20 +79,9 @@
     ]
   },
   {
-    "mame": "AKSARAY",
-    "district_count": 7,
-    "districts": [
-      "AĞAÇÖREN",
-      "ESKİL",
-      "GÜLAĞAÇ",
-      "GÜZELYURT",
-      "ORTAKÖY",
-      "SARIYAHŞİ",
-      "SULTANHANI"
-    ]
-  },
-  {
     "mame": "AMASYA",
+    "abbreviation": "05",
+    "display_order": 5,
     "district_count": 6,
     "districts": [
       "GÖYNÜCEK",
@@ -97,6 +94,8 @@
   },
   {
     "mame": "ANKARA",
+    "abbreviation": "06",
+    "display_order": 6,
     "district_count": 25,
     "districts": [
       "AKYURT",
@@ -128,6 +127,8 @@
   },
   {
     "mame": "ANTALYA",
+    "abbreviation": "07",
+    "display_order": 7,
     "district_count": 19,
     "districts": [
       "AKSEKİ",
@@ -152,18 +153,9 @@
     ]
   },
   {
-    "mame": "ARDAHAN",
-    "district_count": 5,
-    "districts": [
-      "ÇILDIR",
-      "DAMAL",
-      "GÖLE",
-      "HANAK",
-      "POSOF"
-    ]
-  },
-  {
     "mame": "ARTVİN",
+    "abbreviation": "08",
+    "display_order": 8,
     "district_count": 8,
     "districts": [
       "ARDANUÇ",
@@ -178,6 +170,8 @@
   },
   {
     "mame": "AYDIN",
+    "abbreviation": "09",
+    "display_order": 9,
     "district_count": 17,
     "districts": [
       "BOZDOĞAN",
@@ -201,6 +195,8 @@
   },
   {
     "mame": "BALIKESİR",
+    "abbreviation": "10",
+    "display_order": 10,
     "district_count": 20,
     "districts": [
       "ALTIEYLÜL",
@@ -226,35 +222,9 @@
     ]
   },
   {
-    "mame": "BARTIN",
-    "district_count": 3,
-    "districts": [
-      "AMASRA",
-      "KURUCAŞİLE",
-      "ULUS"
-    ]
-  },
-  {
-    "mame": "BATMAN",
-    "district_count": 5,
-    "districts": [
-      "BEŞİRİ",
-      "GERCÜŞ",
-      "HASANKEYF",
-      "KOZLUK",
-      "SASON"
-    ]
-  },
-  {
-    "mame": "BAYBURT",
-    "district_count": 2,
-    "districts": [
-      "AYDINTEPE",
-      "DEMİRÖZÜ"
-    ]
-  },
-  {
     "mame": "BİLECİK",
+    "abbreviation": "11",
+    "display_order": 11,
     "district_count": 7,
     "districts": [
       "BOZÜYÜK",
@@ -268,6 +238,8 @@
   },
   {
     "mame": "BİNGÖL",
+    "abbreviation": "12",
+    "display_order": 12,
     "district_count": 7,
     "districts": [
       "ADAKLI",
@@ -281,6 +253,8 @@
   },
   {
     "mame": "BİTLİS",
+    "abbreviation": "13",
+    "display_order": 13,
     "district_count": 6,
     "districts": [
       "ADİLCEVAZ",
@@ -293,6 +267,8 @@
   },
   {
     "mame": "BOLU",
+    "abbreviation": "14",
+    "display_order": 14,
     "district_count": 8,
     "districts": [
       "DÖRTDİVAN",
@@ -307,6 +283,8 @@
   },
   {
     "mame": "BURDUR",
+    "abbreviation": "15",
+    "display_order": 15,
     "district_count": 10,
     "districts": [
       "AĞLASUN",
@@ -323,6 +301,8 @@
   },
   {
     "mame": "BURSA",
+    "abbreviation": "16",
+    "display_order": 16,
     "district_count": 17,
     "districts": [
       "BÜYÜKORHAN",
@@ -346,6 +326,8 @@
   },
   {
     "mame": "ÇANAKKALE",
+    "abbreviation": "17",
+    "display_order": 17,
     "district_count": 11,
     "districts": [
       "AYVACIK",
@@ -363,6 +345,8 @@
   },
   {
     "mame": "ÇANKIRI",
+    "abbreviation": "18",
+    "display_order": 18,
     "district_count": 11,
     "districts": [
       "ATKARACALAR",
@@ -380,6 +364,8 @@
   },
   {
     "mame": "ÇORUM",
+    "abbreviation": "19",
+    "display_order": 19,
     "district_count": 13,
     "districts": [
       "ALACA",
@@ -399,6 +385,8 @@
   },
   {
     "mame": "DENİZLİ",
+    "abbreviation": "20",
+    "display_order": 20,
     "district_count": 19,
     "districts": [
       "ACIPAYAM",
@@ -424,6 +412,8 @@
   },
   {
     "mame": "DİYARBAKIR",
+    "abbreviation": "21",
+    "display_order": 21,
     "district_count": 17,
     "districts": [
       "BAĞLAR",
@@ -446,20 +436,9 @@
     ]
   },
   {
-    "mame": "DÜZCE",
-    "district_count": 7,
-    "districts": [
-      "AKÇAKOCA",
-      "ÇİLİMLİ",
-      "CUMAYERİ",
-      "GÖLYAKA",
-      "GÜMÜŞOVA",
-      "KAYNAŞLI",
-      "YIĞILCA"
-    ]
-  },
-  {
     "mame": "EDİRNE",
+    "abbreviation": "22",
+    "display_order": 22,
     "district_count": 8,
     "districts": [
       "ENEZ",
@@ -474,6 +453,8 @@
   },
   {
     "mame": "ELAZIĞ",
+    "abbreviation": "23",
+    "display_order": 23,
     "district_count": 10,
     "districts": [
       "AĞIN",
@@ -490,6 +471,8 @@
   },
   {
     "mame": "ERZİNCAN",
+    "abbreviation": "24",
+    "display_order": 24,
     "district_count": 8,
     "districts": [
       "ÇAYIRLI",
@@ -504,6 +487,8 @@
   },
   {
     "mame": "ERZURUM",
+    "abbreviation": "25",
+    "display_order": 25,
     "district_count": 20,
     "districts": [
       "AŞKALE",
@@ -530,6 +515,8 @@
   },
   {
     "mame": "ESKİŞEHİR",
+    "abbreviation": "26",
+    "display_order": 26,
     "district_count": 14,
     "districts": [
       "ALPU",
@@ -550,6 +537,8 @@
   },
   {
     "mame": "GAZİANTEP",
+    "abbreviation": "27",
+    "display_order": 27,
     "district_count": 9,
     "districts": [
       "ARABAN",
@@ -565,6 +554,8 @@
   },
   {
     "mame": "GİRESUN",
+    "abbreviation": "28",
+    "display_order": 28,
     "district_count": 15,
     "districts": [
       "ALUCRA",
@@ -586,6 +577,8 @@
   },
   {
     "mame": "GÜMÜŞHANE",
+    "abbreviation": "29",
+    "display_order": 29,
     "district_count": 5,
     "districts": [
       "KELKİT",
@@ -597,6 +590,8 @@
   },
   {
     "mame": "HAKKARİ",
+    "abbreviation": "30",
+    "display_order": 30,
     "district_count": 4,
     "districts": [
       "ÇUKURCA",
@@ -607,6 +602,8 @@
   },
   {
     "mame": "HATAY",
+    "abbreviation": "31",
+    "display_order": 31,
     "district_count": 15,
     "districts": [
       "ALTINÖZÜ",
@@ -627,16 +624,9 @@
     ]
   },
   {
-    "mame": "IĞDIR",
-    "district_count": 3,
-    "districts": [
-      "ARALIK",
-      "KARAKOYUNLU",
-      "TUZLUCA"
-    ]
-  },
-  {
     "mame": "ISPARTA",
+    "abbreviation": "32",
+    "display_order": 32,
     "district_count": 12,
     "districts": [
       "AKSU",
@@ -654,7 +644,30 @@
     ]
   },
   {
+    "mame": "MERSİN",
+    "abbreviation": "33",
+    "display_order": 33,
+    "district_count": 13,
+    "districts": [
+      "AKDENİZ",
+      "ANAMUR",
+      "AYDINCIK",
+      "BOZYAZI",
+      "ÇAMLIYAYLA",
+      "ERDEMLİ",
+      "GÜLNAR",
+      "MEZİTLİ",
+      "MUT",
+      "SİLİFKE",
+      "TARSUS",
+      "TOROSLAR",
+      "YENİŞEHİR"
+    ]
+  },
+  {
     "mame": "İSTANBUL",
+    "abbreviation": "34",
+    "display_order": 34,
     "district_count": 39,
     "districts": [
       "ADALAR",
@@ -700,6 +713,8 @@
   },
   {
     "mame": "İZMİR",
+    "abbreviation": "35",
+    "display_order": 35,
     "district_count": 30,
     "districts": [
       "ALİAĞA",
@@ -735,46 +750,9 @@
     ]
   },
   {
-    "mame": "KAHRAMANMARAŞ",
-    "district_count": 11,
-    "districts": [
-      "AFŞİN",
-      "ANDIRIN",
-      "ÇAĞLAYANCERİT",
-      "DULKADİROĞLU",
-      "EKİNÖZÜ",
-      "ELBİSTAN",
-      "GÖKSUN",
-      "NURHAK",
-      "ONİKİŞUBAT",
-      "PAZARCIK",
-      "TÜRKOĞLU"
-    ]
-  },
-  {
-    "mame": "KARABÜK",
-    "district_count": 5,
-    "districts": [
-      "EFLANİ",
-      "ESKİPAZAR",
-      "OVACIK",
-      "SAFRANBOLU",
-      "YENİCE"
-    ]
-  },
-  {
-    "mame": "KARAMAN",
-    "district_count": 5,
-    "districts": [
-      "AYRANCI",
-      "BAŞYAYLA",
-      "ERMENEK",
-      "KAZIMKARABEKİR",
-      "SARIVELİLER"
-    ]
-  },
-  {
     "mame": "KARS",
+    "abbreviation": "36",
+    "display_order": 36,
     "district_count": 7,
     "districts": [
       "AKYAKA",
@@ -788,6 +766,8 @@
   },
   {
     "mame": "KASTAMONU",
+    "abbreviation": "37",
+    "display_order": 37,
     "district_count": 19,
     "districts": [
       "ABANA",
@@ -813,6 +793,8 @@
   },
   {
     "mame": "KAYSERİ",
+    "abbreviation": "38",
+    "display_order": 38,
     "district_count": 16,
     "districts": [
       "AKKIŞLA",
@@ -834,30 +816,9 @@
     ]
   },
   {
-    "mame": "KİLİS",
-    "district_count": 3,
-    "districts": [
-      "ELBEYLİ",
-      "MUSABEYLİ",
-      "POLATELİ"
-    ]
-  },
-  {
-    "mame": "KIRIKKALE",
-    "district_count": 8,
-    "districts": [
-      "BAHŞILI",
-      "BALIŞEYH",
-      "ÇELEBİ",
-      "DELİCE",
-      "KARAKEÇİLİ",
-      "KESKİN",
-      "SULAKYURT",
-      "YAHŞİHAN"
-    ]
-  },
-  {
     "mame": "KIRKLARELİ",
+    "abbreviation": "39",
+    "display_order": 39,
     "district_count": 7,
     "districts": [
       "BABAESKİ",
@@ -871,6 +832,8 @@
   },
   {
     "mame": "KIRŞEHİR",
+    "abbreviation": "40",
+    "display_order": 40,
     "district_count": 6,
     "districts": [
       "AKÇAKENT",
@@ -883,6 +846,8 @@
   },
   {
     "mame": "KOCAELİ",
+    "abbreviation": "41",
+    "display_order": 41,
     "district_count": 12,
     "districts": [
       "BAŞİSKELE",
@@ -901,6 +866,8 @@
   },
   {
     "mame": "KONYA",
+    "abbreviation": "42",
+    "display_order": 42,
     "district_count": 31,
     "districts": [
       "AHIRLI",
@@ -938,6 +905,8 @@
   },
   {
     "mame": "KÜTAHYA",
+    "abbreviation": "43",
+    "display_order": 43,
     "district_count": 12,
     "districts": [
       "ALTINTAŞ",
@@ -956,6 +925,8 @@
   },
   {
     "mame": "MALATYA",
+    "abbreviation": "44",
+    "display_order": 44,
     "district_count": 13,
     "districts": [
       "AKÇADAĞ",
@@ -975,6 +946,8 @@
   },
   {
     "mame": "MANİSA",
+    "abbreviation": "45",
+    "display_order": 45,
     "district_count": 17,
     "districts": [
       "AHMETLİ",
@@ -997,7 +970,28 @@
     ]
   },
   {
+    "mame": "KAHRAMANMARAŞ",
+    "abbreviation": "46",
+    "display_order": 46,
+    "district_count": 11,
+    "districts": [
+      "AFŞİN",
+      "ANDIRIN",
+      "ÇAĞLAYANCERİT",
+      "DULKADİROĞLU",
+      "EKİNÖZÜ",
+      "ELBİSTAN",
+      "GÖKSUN",
+      "NURHAK",
+      "ONİKİŞUBAT",
+      "PAZARCIK",
+      "TÜRKOĞLU"
+    ]
+  },
+  {
     "mame": "MARDİN",
+    "abbreviation": "47",
+    "display_order": 47,
     "district_count": 10,
     "districts": [
       "ARTUKLU",
@@ -1013,26 +1007,9 @@
     ]
   },
   {
-    "mame": "MERSİN",
-    "district_count": 13,
-    "districts": [
-      "AKDENİZ",
-      "ANAMUR",
-      "AYDINCIK",
-      "BOZYAZI",
-      "ÇAMLIYAYLA",
-      "ERDEMLİ",
-      "GÜLNAR",
-      "MEZİTLİ",
-      "MUT",
-      "SİLİFKE",
-      "TARSUS",
-      "TOROSLAR",
-      "YENİŞEHİR"
-    ]
-  },
-  {
     "mame": "MUĞLA",
+    "abbreviation": "48",
+    "display_order": 48,
     "district_count": 13,
     "districts": [
       "BODRUM",
@@ -1052,6 +1029,8 @@
   },
   {
     "mame": "MUŞ",
+    "abbreviation": "49",
+    "display_order": 49,
     "district_count": 5,
     "districts": [
       "BULANIK",
@@ -1063,6 +1042,8 @@
   },
   {
     "mame": "NEVŞEHİR",
+    "abbreviation": "50",
+    "display_order": 50,
     "district_count": 7,
     "districts": [
       "ACIGÖL",
@@ -1076,6 +1057,8 @@
   },
   {
     "mame": "NİĞDE",
+    "abbreviation": "51",
+    "display_order": 51,
     "district_count": 5,
     "districts": [
       "ALTUNHİSAR",
@@ -1087,6 +1070,8 @@
   },
   {
     "mame": "ORDU",
+    "abbreviation": "52",
+    "display_order": 52,
     "district_count": 19,
     "districts": [
       "AKKUŞ",
@@ -1111,19 +1096,9 @@
     ]
   },
   {
-    "mame": "OSMANİYE",
-    "district_count": 6,
-    "districts": [
-      "BAHÇE",
-      "DÜZİÇİ",
-      "HASANBEYLİ",
-      "KADİRLİ",
-      "SUMBAS",
-      "TOPRAKKALE"
-    ]
-  },
-  {
     "mame": "RİZE",
+    "abbreviation": "53",
+    "display_order": 53,
     "district_count": 11,
     "districts": [
       "ARDEŞEN",
@@ -1141,6 +1116,8 @@
   },
   {
     "mame": "SAKARYA",
+    "abbreviation": "54",
+    "display_order": 54,
     "district_count": 16,
     "districts": [
       "ADAPAZARI",
@@ -1163,6 +1140,8 @@
   },
   {
     "mame": "SAMSUN",
+    "abbreviation": "55",
+    "display_order": 55,
     "district_count": 17,
     "districts": [
       "19 MAYIS",
@@ -1185,26 +1164,9 @@
     ]
   },
   {
-    "mame": "ŞANLIURFA",
-    "district_count": 13,
-    "districts": [
-      "AKÇAKALE",
-      "BİRECİK",
-      "BOZOVA",
-      "CEYLANPINAR",
-      "EYYÜBİYE",
-      "HALFETİ",
-      "HALİLİYE",
-      "HARRAN",
-      "HİLVAN",
-      "KARAKÖPRÜ",
-      "SİVEREK",
-      "SURUÇ",
-      "VİRANŞEHİR"
-    ]
-  },
-  {
     "mame": "SİİRT",
+    "abbreviation": "56",
+    "display_order": 56,
     "district_count": 6,
     "districts": [
       "BAYKAN",
@@ -1217,6 +1179,8 @@
   },
   {
     "mame": "SİNOP",
+    "abbreviation": "57",
+    "display_order": 57,
     "district_count": 8,
     "districts": [
       "AYANCIK",
@@ -1230,19 +1194,9 @@
     ]
   },
   {
-    "mame": "ŞIRNAK",
-    "district_count": 6,
-    "districts": [
-      "BEYTÜŞŞEBAP",
-      "CİZRE",
-      "GÜÇLÜKONAK",
-      "İDİL",
-      "SİLOPİ",
-      "ULUDERE"
-    ]
-  },
-  {
     "mame": "SİVAS",
+    "abbreviation": "58",
+    "display_order": 58,
     "district_count": 16,
     "districts": [
       "AKINCILAR",
@@ -1265,6 +1219,8 @@
   },
   {
     "mame": "TEKİRDAĞ",
+    "abbreviation": "59",
+    "display_order": 59,
     "district_count": 11,
     "districts": [
       "ÇERKEZKÖY",
@@ -1282,6 +1238,8 @@
   },
   {
     "mame": "TOKAT",
+    "abbreviation": "60",
+    "display_order": 60,
     "district_count": 11,
     "districts": [
       "ALMUS",
@@ -1299,6 +1257,8 @@
   },
   {
     "mame": "TRABZON",
+    "abbreviation": "61",
+    "display_order": 61,
     "district_count": 18,
     "districts": [
       "AKÇAABAT",
@@ -1323,6 +1283,8 @@
   },
   {
     "mame": "TUNCELİ",
+    "abbreviation": "62",
+    "display_order": 62,
     "district_count": 7,
     "districts": [
       "ÇEMİŞGEZEK",
@@ -1335,7 +1297,30 @@
     ]
   },
   {
+    "mame": "ŞANLIURFA",
+    "abbreviation": "63",
+    "display_order": 63,
+    "district_count": 13,
+    "districts": [
+      "AKÇAKALE",
+      "BİRECİK",
+      "BOZOVA",
+      "CEYLANPINAR",
+      "EYYÜBİYE",
+      "HALFETİ",
+      "HALİLİYE",
+      "HARRAN",
+      "HİLVAN",
+      "KARAKÖPRÜ",
+      "SİVEREK",
+      "SURUÇ",
+      "VİRANŞEHİR"
+    ]
+  },
+  {
     "mame": "UŞAK",
+    "abbreviation": "64",
+    "display_order": 64,
     "district_count": 5,
     "districts": [
       "BANAZ",
@@ -1347,6 +1332,8 @@
   },
   {
     "mame": "VAN",
+    "abbreviation": "65",
+    "display_order": 65,
     "district_count": 13,
     "districts": [
       "BAHÇESARAY",
@@ -1365,18 +1352,9 @@
     ]
   },
   {
-    "mame": "YALOVA",
-    "district_count": 5,
-    "districts": [
-      "ALTINOVA",
-      "ARMUTLU",
-      "ÇİFTLİKKÖY",
-      "ÇINARCIK",
-      "TERMAL"
-    ]
-  },
-  {
     "mame": "YOZGAT",
+    "abbreviation": "66",
+    "display_order": 66,
     "district_count": 13,
     "districts": [
       "AKDAĞMADENİ",
@@ -1396,6 +1374,8 @@
   },
   {
     "mame": "ZONGULDAK",
+    "abbreviation": "67",
+    "display_order": 67,
     "district_count": 7,
     "districts": [
       "ALAPLI",
@@ -1405,6 +1385,188 @@
       "GÖKÇEBEY",
       "KİLİMLİ",
       "KOZLU"
+    ]
+  },
+  {
+    "mame": "AKSARAY",
+    "abbreviation": "68",
+    "display_order": 68,
+    "district_count": 7,
+    "districts": [
+      "AĞAÇÖREN",
+      "ESKİL",
+      "GÜLAĞAÇ",
+      "GÜZELYURT",
+      "ORTAKÖY",
+      "SARIYAHŞİ",
+      "SULTANHANI"
+    ]
+  },
+  {
+    "mame": "BAYBURT",
+    "abbreviation": "69",
+    "display_order": 69,
+    "district_count": 2,
+    "districts": [
+      "AYDINTEPE",
+      "DEMİRÖZÜ"
+    ]
+  },
+  {
+    "mame": "KARAMAN",
+    "abbreviation": "70",
+    "display_order": 70,
+    "district_count": 5,
+    "districts": [
+      "AYRANCI",
+      "BAŞYAYLA",
+      "ERMENEK",
+      "KAZIMKARABEKİR",
+      "SARIVELİLER"
+    ]
+  },
+  {
+    "mame": "KIRIKKALE",
+    "abbreviation": "71",
+    "display_order": 71,
+    "district_count": 8,
+    "districts": [
+      "BAHŞILI",
+      "BALIŞEYH",
+      "ÇELEBİ",
+      "DELİCE",
+      "KARAKEÇİLİ",
+      "KESKİN",
+      "SULAKYURT",
+      "YAHŞİHAN"
+    ]
+  },
+  {
+    "mame": "BATMAN",
+    "abbreviation": "72",
+    "display_order": 72,
+    "district_count": 5,
+    "districts": [
+      "BEŞİRİ",
+      "GERCÜŞ",
+      "HASANKEYF",
+      "KOZLUK",
+      "SASON"
+    ]
+  },
+  {
+    "mame": "ŞIRNAK",
+    "abbreviation": "73",
+    "display_order": 73,
+    "district_count": 6,
+    "districts": [
+      "BEYTÜŞŞEBAP",
+      "CİZRE",
+      "GÜÇLÜKONAK",
+      "İDİL",
+      "SİLOPİ",
+      "ULUDERE"
+    ]
+  },
+  {
+    "mame": "BARTIN",
+    "abbreviation": "74",
+    "display_order": 74,
+    "district_count": 3,
+    "districts": [
+      "AMASRA",
+      "KURUCAŞİLE",
+      "ULUS"
+    ]
+  },
+  {
+    "mame": "ARDAHAN",
+    "abbreviation": "75",
+    "display_order": 75,
+    "district_count": 5,
+    "districts": [
+      "ÇILDIR",
+      "DAMAL",
+      "GÖLE",
+      "HANAK",
+      "POSOF"
+    ]
+  },
+  {
+    "mame": "IĞDIR",
+    "abbreviation": "76",
+    "display_order": 76,
+    "district_count": 3,
+    "districts": [
+      "ARALIK",
+      "KARAKOYUNLU",
+      "TUZLUCA"
+    ]
+  },
+  {
+    "mame": "YALOVA",
+    "abbreviation": "77",
+    "display_order": 77,
+    "district_count": 5,
+    "districts": [
+      "ALTINOVA",
+      "ARMUTLU",
+      "ÇİFTLİKKÖY",
+      "ÇINARCIK",
+      "TERMAL"
+    ]
+  },
+  {
+    "mame": "KARABÜK",
+    "abbreviation": "78",
+    "display_order": 78,
+    "district_count": 5,
+    "districts": [
+      "EFLANİ",
+      "ESKİPAZAR",
+      "OVACIK",
+      "SAFRANBOLU",
+      "YENİCE"
+    ]
+  },
+  {
+    "mame": "KİLİS",
+    "abbreviation": "79",
+    "display_order": 79,
+    "district_count": 3,
+    "districts": [
+      "ELBEYLİ",
+      "MUSABEYLİ",
+      "POLATELİ"
+    ]
+  },
+  {
+    "mame": "OSMANİYE",
+    "abbreviation": "80",
+    "display_order": 80,
+    "district_count": 6,
+    "districts": [
+      "BAHÇE",
+      "DÜZİÇİ",
+      "HASANBEYLİ",
+      "KADİRLİ",
+      "SUMBAS",
+      "TOPRAKKALE"
+    ]
+  },
+  {
+    "mame": "DÜZCE",
+    "abbreviation": "81",
+    "display_order": 81,
+    "district_count": 7,
+    "districts": [
+      "AKÇAKOCA",
+      "ÇİLİMLİ",
+      "CUMAYERİ",
+      "GÖLYAKA",
+      "GÜMÜŞOVA",
+      "KAYNAŞLI",
+      "YIĞILCA"
     ]
   }
 ]
